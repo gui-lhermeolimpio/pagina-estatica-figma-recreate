@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body,
+button,
+select,
+textarea,
+input {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+header #navbar {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6.25rem;
+  max-width: 1440px;
+  height: 4.25rem;
+  margin-top: 3rem;
+  gap: 4.38rem;
+}
+header #navbar .nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header #navbar .nav-list .nav-item a {
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+header #navbar .nav-list .nav-item :hover {
+  color: #555;
+  transition: color 0.3s;
+  transition: all 0.3s;
+}
+
+header #navbar .nav-list .nav-btn {
+  padding: 1.25rem 2.18rem;
+  border-radius: 14px;
+  border: solid 1px black;
+  cursor: pointer;
+}
+
+section#content {
+  margin: 0 auto;
+  margin-top: 4.38rem;
+  display: flex;
+  max-width: 1440px;
+  padding: 0 6.25rem;
+  justify-content: space-between;
+}
+
+section#content .content-block {
+  width: 33rem;
+}
+
+section#content .content-block .content-title {
+  font-size: 3.75rem;
+  margin-bottom: 2.18rem;
+}
+
+section#content .content-block .content-text {
+  font-size: 1.25rem;
+  margin-bottom: 2.18rem;
+}
+
+section#content .content-block .content-btn {
+  color: #fff;
+  background-color: #191a23;
+  padding: 1.25rem 2.2rem;
+  border-radius: 0.88rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para telas menores que 768px (por exemplo, tablets e smartphones) */
+@media (max-width: 768px) {
+  /* Exemplo: ajuste o padding do header #navbar */
+  header #navbar {
+    padding: 0 2rem;
+  }
+
+  /* Exemplo: ajuste o tamanho das imagens na seção #carousel */
+  section#carousel {
+    padding: 0 2rem;
+  }
+
+  /* Outros ajustes conforme necessário */
+}
+
+section#carousel {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6.25rem;
+  max-width: 1440px;
+  height: 4.25rem;
+  margin-top: 3rem;
+  margin-bottom: 8.75rem;
+  gap: 4.38rem;
+}
+
+section#carousel img {
+  display: flex;
+}
+
+section .services-header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 6.25rem;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 5rem;
+  gap: 2.5rem;
+  max-width: 1440px;
+}
+
+section .services-header h2 {
+  background-color: #b9ff66;
+  padding: 0.44rem;
+  border-radius: 0.44rem;
+}
+
+section .services-header p {
+  width: 36.25rem;
+  font-size: 1.12rem;
+}
+
+section#services-cards {
+  padding: 0 6rem;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto); /* Ajustado para 3 linhas */
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 2.5rem; /* Reduzido o gap entre as linhas */
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+
+section#services-cards .card,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 2.81rem;
+  padding: 3.125rem;
+  filter: drop-shadow(0px 10px 0px #000000);
+}
+
+section#services-cards .card3,
+.card6 {
+  background-color: #191a23;
+}
+
+section#services-cards .card,
+.card4 {
+  background-color: #f3f3f3;
+}
+
+section#services-cards .card2,
+.card5 {
+  background-color: #b9ff66;
+}
+
+section#services-cards .card .card-content {
+  max-width: 13.81rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5.81rem;
+}
+section#services-cards .card2 .card-content {
+  max-width: 13.81rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5.81rem;
+}
+section#services-cards .card3 .card-content {
+  max-width: 13.81rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5.81rem;
+}
+section#services-cards .card4 .card-content {
+  max-width: 13.81rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5.81rem;
+}
+section#services-cards .card5 .card-content {
+  max-width: 13.81rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5.81rem;
+}
+section#services-cards .card6 .card-content {
+  max-width: 13.81rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5.81rem;
+}
+
+section#services-cards .card .card-content h3 {
+  font-size: 1.88rem;
+  background-color: #b9ff66;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+section#services-cards .card2 .card-content h3 {
+  font-size: 1.88rem;
+  background-color: #f3f3f3;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+section#services-cards .card3 .card-content h3 {
+  font-size: 1.88rem;
+  background-color: #f3f3f3;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+section#services-cards .card4 .card-content h3 {
+  font-size: 1.88rem;
+  background-color: #b9ff66;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+section#services-cards .card5 .card-content h3 {
+  font-size: 1.88rem;
+  background-color: #f3f3f3;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+section#services-cards .card6 .card-content h3 {
+  font-size: 1.88rem;
+  background-color: #b9ff66;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+section#services-cards .card .card-content .card-btn {
+  display: flex;
+  font-size: 1.25rem;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+section#services-cards .card2 .card-content .card-btn {
+  display: flex;
+  font-size: 1.25rem;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+section#services-cards .card3 .card-content .card-btn {
+  display: flex;
+  font-size: 1.25rem;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #f3f3f3;
+}
+
+section#services-cards .card4 .card-content .card-btn {
+  display: flex;
+  font-size: 1.25rem;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+section#services-cards .card5 .card-content .card-btn {
+  display: flex;
+  font-size: 1.25rem;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+section#services-cards .card6 .card-content .card-btn {
+  display: flex;
+  font-size: 1.25rem;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #f3f3f3;
+}
+
+section .contact-header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 6.25rem;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 5rem;
+  gap: 2.5rem;
+  max-width: 1440px;
+}
+
+section .contact-header h2 {
+  background-color: #b9ff66;
+  padding: 0.44rem;
+  border-radius: 0.44rem;
+}
+
+section .contact-header p {
+  width: 20.18rem;
+  font-size: 1.12rem;
+}
+
+.form-container {
+  width: 50.5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  padding: 6.25rem 3.75rem;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 5px 0 rgba(0, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+.radio-group {
+  margin-bottom: 1.25rem;
+}
+
+.radio-group label {
+  margin-right: 1.25rem;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Ocupa o espaço restante */
+}
+
+.form-fields label {
+  margin-bottom: 0.5rem;
+}
+
+.form-fields input[type="text"],
+.form-fields input[type="email"],
+.form-fields textarea {
+  width: 100%; /* Ocupa todo o espaço disponível */
+  height: 3.6875rem;
+  padding: 1rem 1.8rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+}
+
+.form-fields button {
+  width: 100%; /* Ocupa todo o espaço disponível */
+  height: 3.6875rem;
+  background-color: #191a23;
+  color: white;
+  padding: 1rem 1.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+section#form-section figure {
+  display: flex;
+  margin-left: -10rem;
+}
